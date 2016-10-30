@@ -1,0 +1,13 @@
+header{
+	border: 10px solid #99D3DF;
+	background-color: #99D3DF;
+	height: 60px;
+	border-radius: 25px;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TodoApp</title>
+  <%= stylesheet_link_tag "style.css" %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header>
+    <h1>ToDo List App</h1>
+  </header>
+  <main>
+    <%= yield %>
+  </main>
+
+  <footer>
+    <p>
+      Esmeralda Cervantes::Building Web Apps::Scaffolding Assignment
+    </p>
+  </footer>
+</body>
+</html>
