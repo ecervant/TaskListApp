@@ -11,3 +11,13 @@ footer {
   right: 0;
   left: 0;
 }
+#sidebar{
+	position: absolute;
+	right: 0;
+	top: 140px;
+	width: 33%;
+	background-color: #efefef;
+	border-radius: 15px;
+	padding: 5px;
+	margin-right: 10px;
+}
