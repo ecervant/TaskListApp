@@ -32,6 +32,10 @@
     <%= f.check_box :is_completed %>
   </div>
   <div class="field">
+    <%= f.label :is_private %><br>
+    <%= f.check_box :is_private %>
+  </div>
+  <div class="field">
     <%= f.label :task_list_id %><br>
     <%= f.collection_select :task_list_id, TaskList.all, :id, :name, prompt: true %>
   </div>
