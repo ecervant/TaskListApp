@@ -12,7 +12,10 @@
     <h1>ToDo List App</h1>
   </header>
   <main>
-    <%= yield %>
+      <% if flash[:message] %>
+        <p class="flash-message"><%= flash[:message] %></p>
+      <% end %>
+     <%= yield %>
   </main>
   <div id="sidebar">
     <%= render 'layouts/sidebar' %>

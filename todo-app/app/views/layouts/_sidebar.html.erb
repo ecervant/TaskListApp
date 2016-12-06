@@ -1,5 +1,12 @@
 <p> Quick Links: </p>
   <ul>
     <li> <%= link_to 'Tasks', tasks_path %> </li>
+    <li> <%= link_to 'New Task', new_task_path %> </li>
     <li> <%= link_to 'Task Lists', task_lists_path %> </li>
+    <li> <%= link_to 'New Task List', new_task_list_path %> </li>
+    <% if session[:user_id] %>
+      <li><%= link_to 'Logout', logout_path %></li>
+    <% else %>
+      <li><%= link_to 'Login', login_path %></li>
+    <% end %>
   </ul>

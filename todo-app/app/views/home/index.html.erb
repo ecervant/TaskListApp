@@ -1,0 +1,11 @@
+<h2> Home </h2>
+<% if session[:user_id] %>
+  <% @user = User.find_by id: session[:user_id] %>
+  <p> Welcome, <%= @user.first_name %>. Your tasks are: </p>
+  <ol>
+    <% @tasks.each do |task| %>
+        <li><%= task.name %></li>
+    <% end %>
+  </ol>
+
+<% end %>

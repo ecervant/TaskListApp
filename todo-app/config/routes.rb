@@ -1,6 +1,17 @@
 Rails.application.routes.draw do
+  get 'login' => 'login#index', as: :login
+
+  post 'login' => 'login#authenticate', as: :authenticate
+
+  get 'logout' => 'login#logout', as: :logout
+
+  get '/' => 'home#index', as: :home
+
+  root 'home#index'
+#-----------------------------------------------
+
   resources :users
-  get 'home' => 'home#index'
+  # get 'home' => 'home#index'
 
   resources :tasks
   resources :task_lists
